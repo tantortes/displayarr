@@ -1,0 +1,35 @@
+<?xml version='1.0' standalone='yes'?>
+<PLUGIN name="sonarr-widget" author="community" version="0.1" launch="Settings/sonarr-widget">
+
+<FILE Name="/usr/local/emhttp/plugins/sonarr-widget/api/stats.php">
+<URL>https://raw.githubusercontent.com/user/repo/main/api/stats.php</URL>
+</FILE>
+
+<FILE Name="/usr/local/emhttp/plugins/sonarr-widget/include/settings.php">
+<URL>https://raw.githubusercontent.com/user/repo/main/include/settings.php</URL>
+</FILE>
+
+<FILE Name="/usr/local/emhttp/plugins/sonarr-widget/include/sonarr_client.php">
+<URL>https://raw.githubusercontent.com/user/repo/main/include/sonarr_client.php</URL>
+</FILE>
+
+<FILE Name="/usr/local/emhttp/plugins/sonarr-widget/assets/widget.js">
+<URL>https://raw.githubusercontent.com/user/repo/main/assets/widget.js</URL>
+</FILE>
+
+<FILE Name="/usr/local/emhttp/plugins/sonarr-widget/assets/widget.css">
+<URL>https://raw.githubusercontent.com/user/repo/main/assets/widget.css</URL>
+</FILE>
+
+<FILE Name="/usr/local/emhttp/plugins/sonarr-widget/templates/widget.html">
+<URL>https://raw.githubusercontent.com/user/repo/main/templates/widget.html</URL>
+</FILE>
+
+<FILE Run="/usr/bin/php">
+<?php
+[span_2](start_span)// Register the widget with Dynamix Dashboard[span_2](end_span)
+require_once "/usr/local/emhttp/plugins/sonarr-widget/include/settings.php";
+?>
+</FILE>
+
+</PLUGIN>

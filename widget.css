@@ -1,0 +1,44 @@
+.sonarr-widget {
+    padding: 10px;
+}
+
+.sonarr-widget h3 {
+    border-bottom: 1px solid #3e3e3e;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #ff8c00; /* Unraid-style accent orange */
+}
+
+.sonarr-widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sonarr-widget li {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 1.1em;
+    border-bottom: 1px dotted #2b2b2b;
+}
+
+.sonarr-widget li:last-child {
+    border-bottom: none;
+}
+
+.sonarr-widget .stat-label {
+    font-weight: bold;
+    color: #999;
+}
+
+.sonarr-widget .stat-value {
+    color: #dfdfdf;
+    font-family: 'Courier New', monospace;
+}
+
+/* Visual indicator for problems (Should Have) */
+.sonarr-widget .warning {
+    color: #d9534f; /* Red for high missing count or offline status */
+    font-weight: bold;
+}
